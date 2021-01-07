@@ -1,17 +1,18 @@
 <template>
-    <div class="container">
-        <h2>Movie app</h2>
-        <MovieList/>
-    </div>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
-    // @ is an alias to /src
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
-    import MovieList from "../components/MovieList";
-
-    export default {
-        name: 'home',
-        components: {MovieList},
-    }
+export default {
+  name: 'Home',
+  components: {
+    HelloWorld
+  }
+}
 </script>
